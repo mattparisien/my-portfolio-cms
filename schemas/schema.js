@@ -18,7 +18,6 @@ import page from "./documents/page";
 import palette from "./documents/palette";
 import project from "./documents/project";
 import seo from "./documents/seo";
-import section from "./objects/section";
 import siteSettings from "./documents/siteSettings";
 import spacing from "./documents/spacing";
 import testimonial from "./documents/testimonial";
@@ -32,17 +31,25 @@ import linkedCarousel from "./objects/linkedCarousel";
 import linkedGallery from "./objects/linkedGallery";
 import marquee from "./objects/marquee";
 import navItem from "./objects/navItem";
-import next from "./objects/next";
 import projectHero from "./objects/projectHero";
 import quote from "./objects/quote";
+import section from "./objects/section";
 import services from "./objects/services";
 import showcase from "./objects/showcase";
 import splitText from "./objects/splitText";
 import statistics from "./objects/statistics";
-import superText from "./objects/superText";
 import superVideo from "./objects/superVideo";
+import textContent from "./objects/textContent";
 import textWithGraphic from "./objects/textWithGraphic";
 import superImage from "./superImage";
+import layout from "./objects/layout";
+import layoutItem from "./objects/layoutItem";
+import figure from "./documents/figure";
+import textAlignment from "./documents/textAlignment";
+import nextSlug from "./objects/nextSlug";
+import intro from "./documents/intro";
+import grid from "./objects/grid";
+import gridItem from "./objects/gridItem";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -53,6 +60,7 @@ export default createSchema({
   types: schemaTypes.concat([
     // The following are document types which will appear
     // in the studio.
+    intro,
     project,
     collection,
     section,
@@ -61,7 +69,6 @@ export default createSchema({
     linkedGallery,
     superImage,
     superVideo,
-    superText,
     textWithGraphic,
     carousel,
     linkedCarousel,
@@ -89,7 +96,14 @@ export default createSchema({
     marquee,
     splitText,
     instaPost,
-    next,
     showcase,
+    textContent,
+    layout,
+    layoutItem,
+    figure,
+    textAlignment,
+    nextSlug,
+    grid,
+    gridItem,
   ]),
 });

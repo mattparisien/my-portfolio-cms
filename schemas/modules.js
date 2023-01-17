@@ -1,7 +1,9 @@
 export default [
+  { type: "layout" },
+  { type: "figure" },
   { type: "showcase" },
   { type: "projectHero" },
-  { type: "superText" },
+  { type: "textContent" },
   { type: "textWithGraphic" },
   { type: "gallery" },
   { type: "linkedGallery" },
@@ -14,6 +16,7 @@ export default [
   { type: "marquee" },
   { type: "splitText" },
   { type: "instaPost" },
-  { type: "nextPage" },
+  { type: "grid" },
   { type: "reference", to: [{ type: "section" }] },
+  { type: "nextSlug", to: [{ type: "section" }] },
 ];

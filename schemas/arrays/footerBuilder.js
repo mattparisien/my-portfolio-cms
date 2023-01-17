@@ -8,7 +8,6 @@ export default {
       type: "array",
       title: "Blocks",
       of: [
-        { type: "superText" },
         { type: "textWithGraphic" },
         { type: "marquee" },
         { type: "splitText" },

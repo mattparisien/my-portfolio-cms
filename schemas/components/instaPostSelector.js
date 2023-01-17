@@ -73,7 +73,7 @@ const InstaPostSelector = React.forwardRef((props, ref) => {
     }
 
     const mutation = {
-      [`'blocks': pageBuilder.blocks[]{
+      [`'blocks': pageBuilder.{blocks}[]{
         'blocks': blocks[internal.id == '${props.value.id}']{
            caption: ${post.caption},
            permalink: ${post.permalink},

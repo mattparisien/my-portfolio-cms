@@ -8,7 +8,24 @@ export default {
   of: [
     {
       type: "block",
+      styles: [
+        { title: "Paragraph Small", value: "p-sm" },
+        { title: "Paragraph Medium", value: "p-md" },
+        { title: "Paragraph Large", value: "p-lg" },
+        { title: "H1", value: "h1" },
+        { title: "H2", value: "h2" },
+        { title: "H3", value: "h3" },
+        { title: "H4", value: "h4" },
+        { title: "Quote", value: "blockquote" },
+      ],
       marks: {
+        decorators: [
+          { title: "Indent", value: "indent" },
+          { title: "Strong", value: "strong" },
+          { title: "Emphasis", value: "em" },
+          { title: "Code", value: "code" },
+          { title: "Highlight", value: "highlight" },
+        ],
         annotations: [
           {
             name: "link",
@@ -72,6 +89,11 @@ export default {
       type: "quote",
       title: "Quote",
       name: "quote",
+    },
+    {
+      type: "textAlignment",
+      title: "Text Aligment",
+      name: "textAlignment",
     },
   ],
 };

@@ -22,13 +22,13 @@ export default {
     {
       title: "Description",
       name: "description",
-      type: "blockContent",
+      type: "portableText",
       validation: (Rule) => Rule.required(),
     },
     {
-      name: "image",
-      type: "image",
-      title: "Image",
+      name: "figure",
+      type: "figure",
+      title: "Visual",
     },
   ],
   preview: {
