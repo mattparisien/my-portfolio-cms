@@ -35,6 +35,10 @@ const aspectRatios = [
     title: "Portrait 9/13",
     value: "9/13",
   },
+  {
+    title: "Preserve aspect ratio",
+    value: "preserve",
+  },
 ];
 
 const hiddenRule = (doc) => {

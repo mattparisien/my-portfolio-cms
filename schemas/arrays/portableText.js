@@ -70,20 +70,9 @@ export default {
       },
     },
     {
-      name: "image",
-      type: "image",
-      title: "Image",
-      options: {
-        hotspot: true,
-        storeOriginalFileName: false,
-      },
-      fields: [
-        {
-          name: "alt",
-          type: "string",
-          title: "Alternative text",
-        },
-      ],
+      name: "figure",
+      type: "figure",
+      title: "Figure",
     },
     {
       type: "quote",

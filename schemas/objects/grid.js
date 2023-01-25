@@ -4,13 +4,26 @@ export default {
   title: "Grid",
   fields: [
     {
-      type: "string",
-      name: "style",
-      type: "string",
-      options: {
-        list: ["regular", "masonry"],
-      },
-      validation: (Rule) => Rule.required(),
+      title: "Amount of columns",
+      name: "cols",
+      type: "object",
+      fields: [
+        {
+          type: "number",
+          name: "sm",
+          title: "Tablet",
+        },
+        {
+          type: "number",
+          name: "md",
+          title: "Laptop",
+        },
+        {
+          type: "number",
+          name: "lg",
+          title: "Desktop",
+        },
+      ],
     },
     {
       title: "Items",

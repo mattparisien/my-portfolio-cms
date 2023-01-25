@@ -43,6 +43,7 @@ import textContent from "./objects/textContent";
 import textWithGraphic from "./objects/textWithGraphic";
 import superImage from "./superImage";
 import layout from "./objects/layout";
+import layoutRow from "./objects/layoutRow";
 import layoutItem from "./objects/layoutItem";
 import figure from "./documents/figure";
 import textAlignment from "./documents/textAlignment";
@@ -50,6 +51,7 @@ import nextSlug from "./objects/nextSlug";
 import intro from "./documents/intro";
 import grid from "./objects/grid";
 import gridItem from "./objects/gridItem";
+import card from "./objects/card";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -60,6 +62,7 @@ export default createSchema({
   types: schemaTypes.concat([
     // The following are document types which will appear
     // in the studio.
+    card,
     intro,
     project,
     collection,
@@ -99,6 +102,7 @@ export default createSchema({
     showcase,
     textContent,
     layout,
+    layoutRow,
     layoutItem,
     figure,
     textAlignment,

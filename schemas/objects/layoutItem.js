@@ -8,8 +8,8 @@ export default {
   type: "object",
   fields: [
     {
-      title: "Width",
-      name: "width",
+      title: "Flex basis",
+      name: "flexBasis",
       type: "object",
       fields: [
         {
@@ -42,8 +42,25 @@ export default {
       type: "array",
       title: "Module",
       name: "module",
-      of: [{ type: "figure" }, { type: "textContent" }],
+      of: [{ type: "figure" }, { type: "textContent" }, { type: "card" }],
       validation: (Rule) => Rule.max(1),
+    },
+    {
+      type: "object",
+      name: "color",
+      title: "Color",
+      fields: [
+        {
+          type: "color",
+          name: "background",
+          title: "Background",
+        },
+        {
+          type: "color",
+          name: "foreground",
+          title: "Foreground",
+        },
+      ],
     },
   ],
 };

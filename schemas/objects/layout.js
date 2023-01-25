@@ -42,10 +42,10 @@ export default {
       description: "This gutter is only applied to the bottom of the layout (as a margin)",
     },
     {
-      title: "Layout Items",
-      name: "items",
+      title: "Rows",
+      name: "rows",
       type: "array",
-      of: [{ type: "layoutItem" }],
+      of: [{ type: "layoutRow" }],
     },
   ],
 };

@@ -6,7 +6,21 @@ export default {
     {
       name: "colSpan",
       title: "Column span",
-      type: "string",
+      type: "object",
+      fields: [
+        { type: "string", name: "sm", title: "Tablet" },
+        { type: "string", name: "md", title: "Laptop" },
+        {
+          type: "string",
+          name: "lg",
+          title: "Desktop",
+        },
+        {
+          type: "string",
+          name: "xl",
+          title: "Desktop Large",
+        },
+      ],
     },
 
     {
@@ -18,6 +32,9 @@ export default {
       name: "title",
       title: "Title",
       type: "string",
+      initialValue: (ctx, som) => {
+        console.log(som, "..........");
+      },
     },
     {
       name: "tagline",
